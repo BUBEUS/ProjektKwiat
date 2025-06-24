@@ -1,6 +1,19 @@
-# 🌿 Roślinka – Edukacyjna Symulacja Opieki nad Rośliną
+# 🌿 Zdalna Roślinka — Symulacja życia rośliny w Pythonie
 
-> Symuluj życie rośliny, ucz się wzorca MVC, obsługi GUI w Tkinterze i testowania aplikacji Python.
+Aplikacja edukacyjna symulująca życie rośliny w czasie rzeczywistym. Zbudowana w Pythonie przy użyciu wzorca MVC i biblioteki Tkinter.
+
+---
+
+## 📚 Spis treści
+
+- [🎯 Wprowadzenie](#-wprowadzenie)
+- [⚙️ Instalacja i uruchomienie](#️-instalacja-i-uruchomienie)
+- [📁 Struktura projektu](#-struktura-projektu)
+- [🖼️ Projektowanie interfejsu GUI](#️-projektowanie-interfejsu-gui)
+- [🛠️ Debugowanie i testowanie](#️-debugowanie-i-testowanie)
+- [📄 Dokumentacja Sphinx](#-dokumentacja-sphinx)
+- [🧪 Testy jednostkowe](#-testy-jednostkowe)
+- [📌 Licencja i rozwój](#-licencja-i-rozwój)
 
 ---
 
