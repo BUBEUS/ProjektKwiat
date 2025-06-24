@@ -73,7 +73,7 @@ class PlantModel:
             self._moisture -= int(5 + random.random() * 2)     
         
         self._moisture = min(max(self._moisture, 0), 100)    
-        self._time_of_day = (self._time_of_day + 1) % 24
+        self._time_of_day = (self._time_of_day) % 24
 
         hour = self._time_of_day
 
