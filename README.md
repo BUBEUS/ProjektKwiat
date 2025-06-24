@@ -1,16 +1,7 @@
 # 🌿 Roślinka – Edukacyjna Symulacja Opieki nad Rośliną
 
+> Symuluj życie rośliny, ucz się wzorca MVC, obsługi GUI w Tkinterze i testowania aplikacji Python.
 
-## 📚 Spis treści
-
-- [🎯 Wprowadzenie](#-wprowadzenie)
-- [⚙️ Instalacja i uruchomienie](#️instalacja-i-uruchomienie)
-- [📁 Struktura projektu](#struktura-projektu)
-- [🖼️ Projektowanie interfejsu GUI](#️-projektowanie-interfejsu-gui)
-- [🛠️ Debugowanie i testowanie](#️-debugowanie-i-testowanie)
-- [📄 Dokumentacja Sphinx](#-dokumentacja-sphinx)
-- [🧪 Testy jednostkowe](#-testy-jednostkowe)
-- [📌 Licencja i rozwój](#-licencja-i-rozwój)
 ---
 
 ## 📌 Wprowadzenie
@@ -176,13 +167,12 @@ Projekt opracowany jako narzędzie edukacyjne. Można go rozbudować o:
 
 ---
 
-## 🖼️ Zrzuty ekranu 
+## 🖼️ Zrzuty ekranu (opcjonalnie)
 
 ![image](https://github.com/user-attachments/assets/0dbdc015-05c3-4be9-93c9-9dbee31623b9)
 ---
 ![image](https://github.com/user-attachments/assets/e03e745f-a019-49f1-8385-4c8b4be83c52)
 ---
 ![image](https://github.com/user-attachments/assets/6aec41c1-767f-4609-8033-ca9cbc35689f)
-
 
 ---
