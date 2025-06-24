@@ -1,0 +1,7 @@
+Model Kontrolera
+============
+
+.. automodule:: controller
+   :members:
+   :undoc-members:
+   :show-inheritance:

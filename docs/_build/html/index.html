@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>DokumentacjaSphinx documentation &#8212; DokumentacjaSphinx 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Moduł: model" href="model.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="dokumentacjasphinx-documentation">
+<h1>DokumentacjaSphinx documentation<a class="headerlink" href="#dokumentacjasphinx-documentation" title="Link to this heading">¶</a></h1>
+<p>Add your content using <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> syntax. See the
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a>
+documentation for details.</p>
+<section id="wprowadzenie">
+<h2>1. Wprowadzenie<a class="headerlink" href="#wprowadzenie" title="Link to this heading">¶</a></h2>
+<p>Projekt „Roślinka” to edukacyjna aplikacja desktopowa napisana w języku Python, której celem jest symulacja życia rośliny.
+Użytkownik może podlewać roślinę, obserwować zmiany jej parametrów (wilgotność, nasłonecznienie, temperatura) oraz
+symulować upływ czasu (godzina, dzień). Celem projektu jest nauka podstaw wzorca MVC, obsługi GUI w Tkinterze,
+zarządzania stanem aplikacji oraz testowania i dokumentowania kodu.</p>
+</section>
+<section id="instalacja-i-uruchomienie">
+<h2>2. Instalacja i uruchomienie<a class="headerlink" href="#instalacja-i-uruchomienie" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Python 3.10 lub nowszy</p></li>
+<li><p>Pakiety: <cite>sphinx</cite>, <cite>pytest</cite></p></li>
+</ul>
+<p>Instalacja zależności:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx<span class="w"> </span>pytest
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>flake8
+</pre></div>
+</div>
+<p>Uruchomienie aplikacji:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>controller.py
+</pre></div>
+</div>
+<p>Uruchomienie testów jednostkowych (z katalogu głównego projektu):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest
+</pre></div>
+</div>
+<p>Generowanie dokumentacji:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>docs
+make<span class="w"> </span>html
+start<span class="w"> </span>_build/html/index.html
+</pre></div>
+</div>
+</section>
+<section id="struktura-kodu">
+<h2>3. Struktura kodu<a class="headerlink" href="#struktura-kodu" title="Link to this heading">¶</a></h2>
+<p>Projekt podzielony jest zgodnie ze wzorcem MVC (Model-View-Controller):</p>
+<ul class="simple">
+<li><p><strong>model.py</strong>  logika i stan rośliny (wilgotność, temperatura, światło, godzina).</p></li>
+<li><p><strong>view.py</strong>  interfejs graficzny zbudowany w Tkinterze.</p></li>
+<li><p><strong>controller.py</strong>  pośrednik łączący widok i model.</p></li>
+<li><p><strong>test_model.py</strong>  zestaw testów jednostkowych modelu.</p></li>
+<li><p><strong>docs/</strong>  dokumentacja projektu generowana przez Sphinx.</p></li>
+</ul>
+</section>
+<section id="opis-wprowadzonych-zmian-w-gui-oraz-zastosowane-zasady-projektowania-interfejsow">
+<h2>4. Opis wprowadzonych zmian w GUI oraz zastosowane zasady projektowania interfejsów<a class="headerlink" href="#opis-wprowadzonych-zmian-w-gui-oraz-zastosowane-zasady-projektowania-interfejsow" title="Link to this heading">¶</a></h2>
+<p>Interfejs został zmodyfikowany głównie o zasadę:</p>
+<p><strong>Zasada Czytelności i Minimalizmu</strong>, opartą na “The Design of Everyday Things” (2013) autorstwa Don Norman, a dokładnie rozdziałach “The Psychology of Everyday Actions” oraz “The Design Challenge”.</p>
+<p>Interfejs został podzielony na czytelne sekcje, dzięki wykorzystaniu grupujących ramek (LabelFrame) oraz prostych, intuicyjnych elementów takich jak przyciski i paski postępu. Minimalistyczne podejście eliminuje zbędne elementy, przez co użytkownik szybko odnajduje potrzebne informacje i akcje.</p>
+<p>W trakcie tworzenia i usprawniania interfejsu graficznego aplikacji zostały także uwzględnione i zaimplementowane następujące zasady projektowania GUI, mające na celu poprawę użyteczności i doświadczenia użytkownika:</p>
+<p>A - <strong>Zasada Responsywności i Skalowalności</strong></p>
+<p>Interfejs został zaprojektowany tak, aby dynamicznie dostosowywał się do zmiany rozmiaru okna aplikacji. Dzięki odpowiedniemu wykorzystaniu mechanizmu rozmieszczania widgetów (grid oraz pack z konfiguracją rozciągania) poszczególne elementy interfejsu (np. paski postępu, przyciski, ramki) skalują się i przesuwają proporcjonalnie, co zapobiega utracie czytelności i zapewnia komfort użytkowania na różnych rozmiarach okna.</p>
+<p>B - <strong>Zasada Bezpośredniej Manipulacji (Direct Manipulation)</strong></p>
+<p>Aplikacja umożliwia użytkownikowi łatwą i bezpośrednią interakcję z modelem rośliny przez przyciski służące do podlewania oraz symulacji czasu (godzina/dzień). Takie bezpośrednie działanie pozwala na intuicyjne sterowanie stanem rośliny i natychmiastową obserwację efektów.</p>
+<p>C - <strong>Zasada Spójności (Consistency)</strong></p>
+<p>Elementy interfejsu są spójne pod względem wyglądu i zachowania — np. wszystkie przyciski mają jednolity styl, a paski postępu stosują te same kolory i mechanizmy aktualizacji. Spójność poprawia naukę obsługi aplikacji i redukuje ryzyko błędów użytkownika.</p>
+<p>Zmodyfikowano interfejs graficzny, aby był <strong>responsywny</strong> przy zmianie rozmiaru okna.
+W tym celu zastosowano następujące zasady projektowania interfejsów:</p>
+<ul class="simple">
+<li><p><strong>Grid layout</strong> z odpowiednimi atrybutami <cite>.rowconfigure()</cite> i <cite>.columnconfigure()</cite>, aby elementy mogły się automatycznie skalować.</p></li>
+<li><p>Użycie opcji <cite>sticky=’nsew’</cite> dla wszystkich kontrolek, dzięki czemu rozciągają się wraz z rozmiarem okna.</p></li>
+<li><p>Zastosowano <strong>czytelne etykiety</strong>, paski postępu i zmienne dynamicznie odświeżane przez kontroler.</p></li>
+<li><p>Zachowano <strong>czytelność i prostotę</strong>, zgodnie z zasadą minimalizmu w GUI.</p></li>
+</ul>
+<p>Dzięki tym zmianom interfejs automatycznie dostosowuje się do rozmiaru okna użytkownika.</p>
+</section>
+<section id="proces-debugowania-i-naprawy-bledow">
+<h2>5. Proces debugowania i naprawy błędów<a class="headerlink" href="#proces-debugowania-i-naprawy-bledow" title="Link to this heading">¶</a></h2>
+<p>Poprawa działania kodu w przypadku “przewijania” dnia poprzez dodanie nowej metody <strong>model.simulate_day</strong>, by nasłonecznienie oraz temperatura było bardziej adekwatne do obecnej godziny.</p>
+<p>Do statycznej analizy kodu wykorzystano narzędzie:</p>
+<ul class="simple">
+<li><p><strong>Flake8</strong></p></li>
+</ul>
+<p>Typowe błędy wykryte i naprawione:</p>
+<ul class="simple">
+<li><p><strong>E501</strong> – zbyt długie linie (ponad 79 znaków).</p></li>
+<li><p><strong>W291/W293</strong> – zbędne spacje końcowe i puste linie.</p></li>
+<li><p>Nieczytelne komentarze oraz brak docstringów – uzupełniono.</p></li>
+</ul>
+<p>Użycie <cite>pytest</cite> pozwoliło stworzyć zestaw <strong>testów jednostkowych</strong> w pliku <cite>test_model.py</cite>, który pokrywa najważniejsze przypadki w module logiki (<cite>model.py</cite>), np. podlewanie, symulacja czasu, poprawność statusu zdrowia rośliny.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">collected 12 items</span>
+
+<span class="go">test_model.py ............                                                                                       [100%]</span>
+
+<span class="go">================================================= 12 passed in 0.03s ==================================================</span>
+</pre></div>
+</div>
+</section>
+<section id="spis-tresci-modulow">
+<h2>Spis treści modułów<a class="headerlink" href="#spis-tresci-modulow" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Moduły:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="model.html">Moduł: model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="model.html#model.PlantModel"><code class="docutils literal notranslate"><span class="pre">PlantModel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="view.html">Moduł: view</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="view.html#view.PlantView"><code class="docutils literal notranslate"><span class="pre">PlantView</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="controller.html">Model Kontrolera</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#controller.PlantController"><code class="docutils literal notranslate"><span class="pre">PlantController</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="indeksy-i-wyszukiwanie">
+<h2>Indeksy i wyszukiwanie<a class="headerlink" href="#indeksy-i-wyszukiwanie" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">DokumentacjaSphinx</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Moduły:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="model.html">Moduł: model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="view.html">Moduł: view</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controller.html">Model Kontrolera</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="model.html" title="next chapter">Moduł: model</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, JakubS.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
