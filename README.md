@@ -4,8 +4,8 @@
 ## 📚 Spis treści
 
 - [🎯 Wprowadzenie](#-wprowadzenie)
-- [⚙️ Instalacja i uruchomienie](#️-instalacja-i-uruchomienie)
-- [📁 Struktura projektu](#-struktura-projektu)
+- [⚙️ Instalacja i uruchomienie](#️instalacja-i-uruchomienie)
+- [📁 Struktura projektu](#struktura-projektu)
 - [🖼️ Projektowanie interfejsu GUI](#️-projektowanie-interfejsu-gui)
 - [🛠️ Debugowanie i testowanie](#️-debugowanie-i-testowanie)
 - [📄 Dokumentacja Sphinx](#-dokumentacja-sphinx)
