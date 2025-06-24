@@ -4,19 +4,6 @@ Aplikacja edukacyjna symulująca życie rośliny w czasie rzeczywistym. Zbudowan
 
 ---
 
-## 📚 Spis treści
-
-- [🎯 Wprowadzenie](#-wprowadzenie)
-- [⚙️ Instalacja i uruchomienie](#️-instalacja-i-uruchomienie)
-- [📁 Struktura projektu](#-struktura-projektu)
-- [🖼️ Projektowanie interfejsu GUI](#️-projektowanie-interfejsu-gui)
-- [🛠️ Debugowanie i testowanie](#️-debugowanie-i-testowanie)
-- [📄 Dokumentacja Sphinx](#-dokumentacja-sphinx)
-- [🧪 Testy jednostkowe](#-testy-jednostkowe)
-- [📌 Licencja i rozwój](#-licencja-i-rozwój)
-
----
-
 ## 📌 Wprowadzenie
 
 Projekt **„Roślinka”** to edukacyjna aplikacja desktopowa napisana w języku Python. Celem aplikacji jest umożliwienie użytkownikowi symulowania życia rośliny: podlewania jej, obserwowania zmian warunków środowiskowych (wilgotność, światło, temperatura), a także upływu czasu (godzina, dzień).
@@ -170,15 +157,6 @@ Dostępne indeksy i wyszukiwanie:
 
 ---
 
-## 👨‍💻 Autorzy i rozwój
-
-Projekt opracowany jako narzędzie edukacyjne. Można go rozbudować o:
-
-- zapisywanie stanu do pliku (np. JSON),
-- automatyczne podlewanie (algorytm lub harmonogram),
-- obsługę wielu roślin i typów.
-
----
 
 ## 🖼️ Zrzuty ekranu (opcjonalnie)
 
