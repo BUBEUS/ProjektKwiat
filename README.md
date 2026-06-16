@@ -1,4 +1,5 @@
 # 🌿 Zdalna Roślinka — Symulacja życia rośliny w Pythonie
+# EARLY AI SZPONT
 
 Aplikacja edukacyjna symulująca życie rośliny w czasie rzeczywistym. Zbudowana w Pythonie przy użyciu wzorca MVC i biblioteki Tkinter.
 
